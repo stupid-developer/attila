@@ -86,8 +86,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  {% endblock head %}
-  
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.page_level_ads %}
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
@@ -97,6 +95,8 @@
     });
   </script>
   {% endif %}
+  
+  {% endblock head %}
 </head>
 <!-- TODO : Body class -->
 <body class="home-template">
@@ -118,7 +118,7 @@
             {% if SHOW_CREDITS and SHOW_CREDITS.left %}
               {% set left=SHOW_CREDITS.left %}
             {% else %}
-              {% set left='Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a>' %}
+              {% set left='Theme <a href="https://github.com/stupid-developer/attila" rel="nofollow">Attila</a>' %}
             {% endif %}
 
             {% if SHOW_CREDITS and SHOW_CREDITS.right %}
