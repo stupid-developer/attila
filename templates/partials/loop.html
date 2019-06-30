@@ -33,6 +33,7 @@
                         {{ article.summary|striptags|truncate(250) }}
                     {% endif %}
                     </p>
+                    <p><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">show more...</a></p>
                 </section>
             {% endif %}
             {% include 'partials/comments_count.html' %}
